@@ -108,8 +108,8 @@ body {
   grid-column: full-start/col-end 6;
   padding: 4rem 8rem 8rem;
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   row-gap: 1.5rem;
   justify-content: center; }
   .header__logo {
@@ -137,7 +137,8 @@ body {
     justify-items: center;
     align-items: center; }
     .header__seen-on-logos img {
-      height: 2.5rem;
+      max-height: 2.5rem;
+      max-width: 100%;
       filter: brightness(65%); }
 
 .realtors {
@@ -346,6 +347,7 @@ body {
       text-decoration: none;
       font-family: "Josefin Sans", sans-serif;
       text-transform: uppercase;
+      text-align: center;
       padding: 1.5rem;
       display: inline-block;
       transition: all .2s; }
