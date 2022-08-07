@@ -12,6 +12,10 @@
         justify-items: center;
         align-items: center;
 
+        @media only screen and (max-width: $bp-s) {
+            grid-template-columns: repeat(2, minmax(min-content, 1fr))
+          }
+
         &__link:link,
         &__link:visited {
             font-size: 1.4rem;

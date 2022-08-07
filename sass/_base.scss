@@ -18,6 +18,8 @@ $font-display: "Josefin Sans", sans-serif;
 $bp-xl: 75em; //1200px
 $bp-l: 62.5em; //1000px
 $bp-m: 50em; //800px
+$bp-s: 43.75em; //700px
+$bp-xs: 37.5em; //600px
 
 *,
 *::before,
@@ -76,8 +78,6 @@ body {
     grid-template-rows:
       6rem
       calc(100vh - 6rem)
-      repeat(2, min-content)
-      40vw
-      repeat(3, min-content);
+      repeat(6, min-content);
   }
 }
